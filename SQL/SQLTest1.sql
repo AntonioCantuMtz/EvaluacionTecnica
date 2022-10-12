@@ -14,11 +14,11 @@ CREATE TABLE employee_department(
 );
 
 ALTER TABLE employee 
-	ADD fk_department INT UNSIGNED NOT NULL;
+ADD fk_department INT UNSIGNED NOT NULL;
     
 ALTER TABLE employee 
-	ADD FOREIGN KEY (fk_department) 
-    REFERENCES employee_department(id_department);
+ADD FOREIGN KEY (fk_department) 
+REFERENCES employee_department(id_department);
 
 SELECT * FROM employee;
 SELECT * FROM employee_department;
